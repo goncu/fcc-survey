@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>User Survey</title>
+    </head>
+
+    <body>
+        <main>
+            <h1 id="title">User Survey</h1>
+            <p id="description">Please provide the information we ask below to allow us to provide a better service for you.</p>
+        </main>
+
+        <hr>
+
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Your full name: </label>
+                <input name="name" type="text" id="name" placeholder="Your full name" required>
+                <label for="email" id="email-label">Your e-mail: </label>
+                <input name="email" type="email" id="email" placeholder="Your e-mail" required>
+                <label for="number" id="number-label">Please enter your age: </label>
+                <input name="number" type="number" id="number" placeholder="Your age" min="13" max="120">
+            </fieldset>
+
+<hr>
+
+            <fieldset>
+                <label for="dropdown" id="dropdown-label">Please select your subscription type:</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="">Please select</option>
+                    <option value="1">Monthly</option>
+                    <option value="2">Yearly</option>
+                </select>
+                <label style="display: block">Please select your current payment method:</label>
+                <label  for="payment"><input class="inln" type="radio" name="payment" value="card">Card</label>
+                <label for="payment"><input class="inln" type="radio" name="payment" value="paypal">PayPal</label>
+                <label for="accept-terms"><input class="inln" type="checkbox" value="accept-terms">I accept my information to be shared.</label>
+                <label for="newsletter"><input class="inln" type="checkbox" value="newsletter">I accept to receive the newsletter.</label>
+            </fieldset>
+
+<hr>
+
+            <fieldset>
+                <label for="comment">Please provide your additional comments:</label><textarea id="comment" name="comment" rows="5" cols="50" placeholder="Share your comments here..."></textarea>
+            </fieldset>
+
+<hr>
+
+            <input id="submit" type="submit" value="submit">
+        </form>
+    </body>
+</html>
